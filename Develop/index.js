@@ -12,6 +12,5 @@ function init() {}
 // Function call to initialize app
 init();
 
-
 // run npm init
 // run npm i inquirer
