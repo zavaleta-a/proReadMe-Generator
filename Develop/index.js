@@ -91,15 +91,36 @@ const generateHTML = ({
   <div class="container">
     <h1 class="display-4">${projectName}</h1>
     <p class="lead">${description}.</p>
-    <h2>Table of Contents></h2>
-    <ol class="contents-group">
+    <h2>Table of Contents</h2>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#test">Test</a></li>
+    <li><a href="#questions">Questions?</a></li>
+    <li><a href="#contact">Contact and GitHub</a></li>
+    <br>
+    <br> 
+
+    <h2 id="installation">Installation</h2>
         <li class="contents-group">${installation}</li>
+        <br>
+    <h2 id="usage">Usage</h2>
         <li class="contents-group">${usage}</li>
+        <br>
+    <h2 id="license">License</h2>
         <li class="contents-group">${license}</li>
+        <br>
+    <h2 id="contributing">Contributing</h2>
         <li class="contents-group">${contributing}</li>
+        <br>
+    <h2 id="test">Test</h2>
         <li class="contents-group">${tests}</li>
+        <br>
+    <h2 id="questions">Questions?</h2>
         <li class="contents-group">${questions}</li>
-    <ul class="list-group">
+        <br>
+    <h2 id="contact">Contact and GitHub</h2>
       <li class="list-group-item">My GitHub username is ${github}</li>
       <li class="list-group-item">My GitHub repostiory is ${repository}</li>
       <li class="list-group-item">My email is: ${email}</li>
