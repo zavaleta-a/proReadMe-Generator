@@ -97,14 +97,15 @@ const generateHTML = ({
     <p class="lead">${description}.</p>
     <h2>Example heading <span class="badge badge-secondary">Table of Contents</span></h2>
     <ol class="contents-group">
-        <li class="contents-group">
-        <li class="contents-group">
-        <li class="contents-group">
-        <li class="contents-group">
-        <li class="contents-group">
-        <li class="contents-group">
+        <li class="contents-group">${installation}</li>
+        <li class="contents-group">${usage}</li>
+        <li class="contents-group">${license}</li>
+        <li class="contents-group">${contributing}</li>
+        <li class="contents-group">${tests}</li>
+        <li class="contents-group">${questions}</li>
     <ul class="list-group">
       <li class="list-group-item">My GitHub username is ${github}</li>
+      <li class="list-group-item">My GitHub repostiory is ${repository}</li>
       <li class="list-group-item">My email is: ${email}</li>
     </ul>
   </div>
