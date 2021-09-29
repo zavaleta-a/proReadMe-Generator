@@ -17,7 +17,7 @@ const promptUser = () => {
     },
     {
       type: "input",
-      name: "Installation",
+      name: "installation",
       message: "What command should be run to install the dependencies?",
     },
     {
@@ -52,7 +52,7 @@ const promptUser = () => {
     },
     {
       type: "input",
-      name: "github username",
+      name: "github",
       message: "What is your GitHub Username?",
     },
     {
@@ -68,7 +68,6 @@ const promptUser = () => {
 const generateHTML = ({
   projectName,
   description,
-  tableOfContents,
   installation,
   usage,
   license,
@@ -92,7 +91,7 @@ const generateHTML = ({
   <div class="container">
     <h1 class="display-4">${projectName}</h1>
     <p class="lead">${description}.</p>
-    <h2>Example heading <span class="badge badge-secondary">Table of Contents</span></h2>
+    <h2>Table of Contents></h2>
     <ol class="contents-group">
         <li class="contents-group">${installation}</li>
         <li class="contents-group">${usage}</li>
