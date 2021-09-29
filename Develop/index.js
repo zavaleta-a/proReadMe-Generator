@@ -3,7 +3,53 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+    {
+        type: 'input',
+        projectName: 'projectName',
+        message: 'What is your project name?',
+    },
+    {
+        type: 'input',
+        description: 'description',
+        message: 'Provide a brief description of your project:',
+    },
+    {
+        type: 'input',
+        tableOfContents: 'tableOfContents',
+        message: 'Name your table of contents.',
+    }
+    {
+        type: 'input',
+        installation: 'installation',
+        message: '',
+    }
+    {
+        type: 'input',
+        usage: 'usage',
+        message: 'Usage',
+    }
+    {
+        type: 'input',
+        license: 'license',
+        message: 'Program License',
+    }
+    {
+        type: 'input',
+        contributing: 'contributing',
+        message: 'Contributing',
+    }
+    {
+        type: 'input',
+        license: 'license',
+        message: 'Program License',
+    }
+    {
+        type: 'input',
+        license: 'license',
+        message: 'Program License',
+    }
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
@@ -17,8 +63,7 @@ init();
 // run npm init
 // run npm i inquirer
 // create a boiler plate html
-// const fs = require('fs')
-// const inquirer = require('inquirer')
+
 // Prompt user for information about application repository
 // generate readme with title of project and sections
 // entitled Description, Table of Contents,
@@ -26,6 +71,7 @@ init();
 // and Questions
 // In the Questions section of the ReadMe, we need a link
 // to my GitHub profile
+
 // Create prompts
 // What is the link to your repository?
 // What is the title of your project?
