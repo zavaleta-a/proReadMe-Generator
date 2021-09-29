@@ -121,9 +121,9 @@ const generateHTML = ({
         <li class="contents-group">${questions}</li>
         <br>
     <h2 id="contact">Contact and GitHub</h2>
-      <li class="list-group-item">My GitHub username is ${github}</li>
-      <li class="list-group-item">My GitHub repostiory is ${repository}</li>
-      <li class="list-group-item">My email is: ${email}</li>
+      <li class="list-group-item">My GitHub username is <a href="https://github.com/zavaleta-a">${github}.</li>
+      <li class="list-group-item">My GitHub repostiory is <a href="https://github.com/zavaleta-a/proReadMe-Generator">https://github.com/zavaleta-a/proReadMe-Generator</a> ${repository}.</li>
+      <li class="list-group-item">My email is:<a href="mailto:azavaleta07@gmail.com"> ${email}.</li>
     </ul>
   </div>
 </div>
