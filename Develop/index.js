@@ -1,72 +1,74 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
-const utilities = require("./utils");
-const genMkDn = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
-const questions = [
-  {
-    type: "input",
-    name: "projectName",
-    message: "What is your project's name?",
-  },
-  {
-    type: "input",
-    name: "description",
-    message: "Provide a brief description of your project:",
-  },
-  {
-    type: "input",
-    name: "tableOfContents",
-    message: "Name your table of contents.",
-  },
-  {
-    type: "input",
-    name: "What command should be run to install the dependencies?",
-    message: "npm i",
-  },
-  {
-    type: "input",
-    name: "usage",
-    message: "Usage",
-  },
-  {
-    type: "input",
-    name: "license",
-    message: "Program License",
-  },
-  {
-    type: "input",
-    name: "contributing",
-    message: "Contributing",
-  },
-  {
-    type: "input",
-    name: "tests",
-    message: "Tests",
-  },
-  {
-    type: "input",
-    name: "questions",
-    message: "Questions",
-  },
-  {
-    type: "input",
-    name: "repository",
-    message: "Repository URL:",
-  },
-  {
-    type: "input",
-    name: "github username",
-    message: "What is your GitHub Username?",
-  },
-  {
-    type: "input",
-    name: "email",
-    message: "What is your email address?",
-  },
-];
+const promptUser = () => {
+  return inquirer.prompt([
+    {
+      type: "input",
+      name: "projectName",
+      message: "What is your project's name?",
+    },
+    {
+      type: "input",
+      name: "description",
+      message: "Provide a brief description of your project:",
+    },
+    {
+      type: "input",
+      name: "tableOfContents",
+      message: "Name your table of contents.",
+    },
+    {
+      type: "input",
+      name: "Installation",
+      message: "What command should be run to install the dependencies?",
+    },
+    {
+      type: "input",
+      name: "usage",
+      message: "Usage",
+    },
+    {
+      type: "input",
+      name: "license",
+      message: "Program License",
+    },
+    {
+      type: "input",
+      name: "contributing",
+      message: "Contributing",
+    },
+    {
+      type: "input",
+      name: "tests",
+      message: "Tests",
+    },
+    {
+      type: "input",
+      name: "questions",
+      message: "Questions",
+    },
+    {
+      type: "input",
+      name: "repository",
+      message: "Repository URL:",
+    },
+    {
+      type: "input",
+      name: "github username",
+      message: "What is your GitHub Username?",
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "What is your email address?",
+    },
+  ]);
+};
+
+// prompt user to answer questions
 
 const generateHTML = ({
   projectName,
@@ -112,25 +114,20 @@ const generateHTML = ({
 </div>
 </body>
 </html>`;
-// TODO: Create a function to initialize app
 
-// Function call to initialize app
+// TODO: Create a function to initialize app
 const init = () => {
-  questions()
+  promptUser()
     // TODO: Create a function to write README file
     .then((answers) => fs.writeFileSync("index.html", generateHTML(answers)))
     .then(() => console.log("Successfully written to index.html"))
     .catch((err) => console.error(err));
 };
-
+// Function call to initialize app
 init();
-
-// create a boiler plate html
 
 // Prompt user for information about application repository
 // generate readme with title of project and sections
-// entitled Description, Table of Contents,
-// Installation, Usage, License, Contributing, Tests,
-// and Questions
+
 // In the Questions section of the ReadMe, we need a link
 // to my GitHub profile
