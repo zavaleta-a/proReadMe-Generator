@@ -26,9 +26,10 @@ const promptUser = () => {
       message: "Usage",
     },
     {
-      type: "input",
+      type: "checkbox",
       name: "license",
-      message: "Program License",
+      message: "What license should your application have?",
+      choices: ["MIT", "GNU v3", "ISC", "Mozilla Public License 2.0"],
     },
     {
       type: "input",
@@ -121,9 +122,9 @@ const generateHTML = ({
         <li class="contents-group">${questions}</li>
         <br>
     <h2 id="contact">Contact and GitHub</h2>
-      <li class="list-group-item">My GitHub username is <a href="https://github.com/zavaleta-a">${github}.</li>
-      <li class="list-group-item">My GitHub repostiory is <a href="https://github.com/zavaleta-a/proReadMe-Generator">https://github.com/zavaleta-a/proReadMe-Generator</a> ${repository}.</li>
-      <li class="list-group-item">My email is:<a href="mailto:azavaleta07@gmail.com"> ${email}.</li>
+      <li class="list-group-item">My GitHub username is <a href="https://github.com/zavaleta-a">${github}.</a></li>
+      <li class="list-group-item">My GitHub repostiory is <a href="https://github.com/zavaleta-a/proReadMe-Generator">${repository}.</a></li>
+      <li class="list-group-item">My email is:<a href="mailto:azavaleta07@gmail.com"> ${email}.</a></li>
     </ul>
   </div>
 </div>
@@ -140,9 +141,6 @@ const init = () => {
 };
 // Function call to initialize app
 init();
-
-// Prompt user for information about application repository
-// generate readme with title of project and sections
 
 // In the Questions section of the ReadMe, we need a link
 // to my GitHub profile
