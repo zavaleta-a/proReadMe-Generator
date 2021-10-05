@@ -11,22 +11,22 @@
   - [Contact Info](#contact-info)
 
   ## Description:
-  This is a command line application that generates a ReadMe.md based on the information entered by the user
+  This is a command line application that generates a ReadMe.md using the information entered by the user.
 
   ## Installation:
   npm i
 
   ## Usage:
-  This application should be used when you need to create a ReadMe.md
+  This app should be used to create a ReadMe.md 
 
   ## License:
   ISC
 
   ## Contributing:
-  Contributions are currently not being accepted
+  This application is not accepting contributions at this time
 
   ## Tests:
-  To run tests, use; npm run test
+  npm run test
 
   ## Questions:
   For any questions or comments, please contact me at the email provided below

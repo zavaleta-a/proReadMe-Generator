@@ -65,8 +65,6 @@ const promptUser = () => {
   ]);
 };
 
-// prompt user to answer questions
-
 // TODO: Create a function to initialize app
 const init = () => {
   promptUser()
