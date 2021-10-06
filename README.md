@@ -4,7 +4,7 @@
 # Demo 
 Demo video can be found [here](https://watch.screencastify.com/v/CZQvCAm3SrlSm3eupVkR).
 
-Output![readMeScreenshot][readMeMd-screenshot](https://user-images.githubusercontent.com/84590140/136121619-77f263d4-34f0-4c5a-b1c4-7a07701cb2c2.jpg)
+Output![readMeScreenshot](https://user-images.githubusercontent.com/84590140/136121619-77f263d4-34f0-4c5a-b1c4-7a07701cb2c2.jpg)
 c9ba31a00.jpg)
 # Description
 This homework is a command line application that generates a ReadMe based on information entered by the user.
