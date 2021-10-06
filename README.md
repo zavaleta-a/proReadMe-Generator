@@ -1,8 +1,8 @@
 # ReadMe-Generator
-<<<<<<< HEAD
+
 =======
 # Demo 
-Demo video can be found [here](https://drive.google.com/file/d/1A_T9lwWuPSpNSXAFs0NpEXTLF5TQy7lL/view).
+Demo video can be found [here](https://watch.screencastify.com/v/CZQvCAm3SrlSm3eupVkR).
 
 Output![readMeScreenshot](https://user-images.githubusercontent.com/84590140/135386402-893c73bd-bb5d-4a3b-95ca-030c9ba31a00.jpg)
 # Description
@@ -36,4 +36,4 @@ GitHub username: zavaleta-a
 
 Email: azavaleta07@gmail.com
 
->>>>>>> 8e7c67cc13dbc8b5d6a49a5a3dbcd45dfe511ac1
+
